@@ -1,0 +1,325 @@
+/* Project Cards Styling */
+.project-section {
+  padding: 80px 0;
+  background: var(--section-background-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.project-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: var(--image-gradient);
+  z-index: -1;
+}
+
+.project-heading {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  display: inline-block;
+}
+
+.project-heading::after {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 4px;
+  background: var(--imp-text-color);
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.project-heading .purple {
+  color: var(--imp-text-color);
+  text-shadow: 0 0 10px rgba(199, 112, 240, 0.5);
+}
+
+.project-card-col {
+  margin-bottom: 30px;
+  padding: 0 15px;
+  transition: transform 0.3s ease;
+}
+
+.project-card-view {
+  border: none;
+  border-radius: 12px;
+  background: rgba(30, 30, 45, 0.8);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.project-card-view::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--imp-text-color), #6f42c1);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+
+.project-card-view:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(111, 66, 193, 0.2);
+  border-color: rgba(199, 112, 240, 0.2);
+}
+
+.project-card-view:hover::before {
+  transform: scaleX(1);
+}
+
+.project-card-img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card-view:hover .project-card-img {
+  transform: scale(1.03);
+}
+
+.project-card-body {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.project-card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 5px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: block;
+}
+
+.project-card-title::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background: var(--imp-text-color);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.project-card-view:hover .project-card-title::after {
+  width: 70px;
+}
+
+.project-description {
+  flex-grow: 1;
+  margin: 15px 0;
+  text-align: left;
+  width: 100%;
+}
+
+.description-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.description-bullet {
+  position: relative;
+  padding-left: 15px; /* Reduced from 25px */
+  margin-bottom: 8px; /* Reduced from 12px */
+  color: #e0e0e0;
+  font-size: 0.9rem; /* Slightly smaller font */
+  line-height: 1.5; /* Tighter line height */
+  text-align: left;
+  opacity: 0.9;
+  transition: all 0.3s ease;
+  list-style-type: none; /* Remove default bullet */
+}
+
+.project-card-view:hover .description-bullet {
+  opacity: 1;
+}
+
+.description-bullet::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--imp-text-color);
+  font-size: 0.9rem; /* Slightly smaller bullet */
+  line-height: 1.5;
+  transition: transform 0.3s ease;
+  margin-right: 6px; /* Space between bullet and text */
+}
+
+.project-card-view:hover .description-bullet::before {
+  transform: translateX(3px);
+}
+
+.project-card-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-card-button {
+  border: none;
+  border-radius: 30px;
+  padding: 10px 22px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  min-width: 120px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+  border-radius: 30px;
+}
+
+.project-card-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.2));
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 30px;
+}
+
+.project-card-button:hover::after {
+  opacity: 1;
+}
+
+.github-btn {
+  background: linear-gradient(135deg, #6f42c1, #8a2be2);
+  color: #ffffff !important;
+}
+
+.github-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 20px rgba(111, 66, 193, 0.4) !important;
+}
+
+.demo-btn {
+  background: linear-gradient(135deg, var(--imp-text-color), #9c42f5);
+  color: #ffffff !important;
+}
+
+.demo-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 20px rgba(199, 112, 240, 0.4) !important;
+}
+
+.button-icon {
+  margin-right: 8px;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.project-card-button:hover .button-icon {
+  transform: translateX(3px);
+}
+
+/* Responsive Design */
+@media (min-width: 1200px) {
+  .project-card-col {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .project-card-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .project-card-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px 30px; /* Added bottom padding for spacing */
+    margin-bottom: 15px; /* Additional margin for better separation */
+  }
+  
+  /* Add spacing between stacked cards */
+  .project-card-col:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  
+  .project-card-buttons {
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .project-card-button {
+    width: auto;
+    padding: 8px 18px;
+    font-size: 0.9rem;
+  }
+  
+  .project-heading {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .project-card-img {
+    height: 160px;
+  }
+}

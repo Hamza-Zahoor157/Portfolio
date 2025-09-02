@@ -1,0 +1,52 @@
+/* GitHub Component Styles */
+
+/* Stat Cards */
+.stat-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  border-color: #64ffda !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* GitHub Button */
+.github-button {
+  background-color: #6f42c1;
+  color: white !important;
+  border: 1px solid #6f42c1;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.github-button:hover {
+  background-color: #5a32a8 !important;
+  border-color: #5a32a8 !important;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(111, 66, 193, 0.4);
+  color: white !important;
+  text-decoration: none;
+}
+
+.github-button:active {
+  transform: translateY(0);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .stat-card {
+    padding: 20px 10px !important;
+  }
+  
+  .stat-card div:first-child {
+    font-size: 2rem !important;
+  }
+  
+  .stat-card div:nth-child(2) {
+    font-size: 1.5rem !important;
+  }
+}

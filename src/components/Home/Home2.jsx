@@ -4,8 +4,7 @@ import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
+  AiOutlineMail,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -19,36 +18,33 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I'm a passionate Software Engineer currently pursuing my BS in Software Engineering at Punjab University College of Information and Technology with a CGPA of 3.79.
               <br />
-              <br />I am fluent in classics like
+              <br />I'm proficient in
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+                <b className="purple"> C/C++, C#, Java, and JavaScript/TypeScript. </b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              My expertise lies in building &nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
+                <b className="purple">Full-Stack Web Applications </b> using modern technologies like{" "}
                 <b className="purple">
-                  Blockchain.
+                  Next.js, React, Node.js, and various databases.
                 </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              I have hands-on experience with <b className="purple">MERN Stack</b> and
               <i>
                 <b className="purple">
                   {" "}
-                  Modern Javascript Library and Frameworks
+                  modern development tools
                 </b>
               </i>
-              &nbsp; like
+              &nbsp; including
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple"> ShadCN UI, Tailwind CSS, and Framer Motion</b>
               </i>
             </p>
           </Col>
@@ -67,42 +63,35 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/Hamza-Zahoor157"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
+                  title="GitHub"
                 >
                   <AiFillGithub />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="mailto:hamzazahoor1067@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
+                  title="Email"
                 >
-                  <AiFillInstagram />
+                  <AiOutlineMail />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/hamza-zahoor-056223268"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                  title="LinkedIn"
+                >
+                  <FaLinkedinIn />
                 </a>
               </li>
             </ul>

@@ -18,33 +18,33 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I'm a passionate Software Engineer currently pursuing my BS in Software Engineering at Punjab University College of Information and Technology with a CGPA of 3.79.
+              I'm a final-year Software Engineering student at PUCIT (CGPA: 3.81/4.0) with practical experience from internships at <b className="purple">Nexium</b>, <b className="purple">Markonify</b>, and <b className="purple">Turing</b>.
               <br />
               <br />I'm proficient in
               <i>
-                <b className="purple"> C/C++, C#, Java, and JavaScript/TypeScript. </b>
+                <b className="purple"> C/C++, C#, .NET, Java, Python, JavaScript/TypeScript, and SQL. </b>
               </i>
               <br />
               <br />
               My expertise lies in building &nbsp;
               <i>
-                <b className="purple">Full-Stack Web Applications </b> using modern technologies like{" "}
+                <b className="purple">Full-Stack Applications </b> with{" "}
                 <b className="purple">
-                  Next.js, React, Node.js, and various databases.
+                  Next.js, React, .NET MVC, Node.js, MERN Stack
                 </b>
+              </i>
+              &nbsp;and deploying&nbsp;
+              <i>
+                <b className="purple">AI-Powered Solutions </b> using{" "}
+                <b className="purple">
+                  LangChain, RAG Systems, n8n workflows
+                </b>, and vector databases.
               </i>
               <br />
               <br />
-              I have hands-on experience with <b className="purple">MERN Stack</b> and
+              I work with databases like <b className="purple">Supabase, MongoDB, Prisma, SQL Server</b>, and modern tools including
               <i>
-                <b className="purple">
-                  {" "}
-                  modern development tools
-                </b>
-              </i>
-              &nbsp; including
-              <i>
-                <b className="purple"> ShadCN UI, Tailwind CSS, and Framer Motion</b>
+                <b className="purple"> ShadCN UI, Tailwind CSS, Framer Motion, and Vercel CI/CD.</b>
               </i>
             </p>
           </Col>

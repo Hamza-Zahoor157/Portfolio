@@ -8,6 +8,7 @@ import aiPitch from "../../Assets/Projects/ai-pitch.png";
 import hotelMvc from "../../Assets/Projects/hotel-mvc.png";
 import blogSummarizer from "../../Assets/Projects/blog-summarizer.png";
 import hotelJava from "../../Assets/Projects/hotel-java.png";
+import cricketRag from "../../Assets/Projects/chatify.png"; // Placeholder - replace with actual RAG project image
 import "./project-cards.css";
 
 function Projects() {
@@ -22,6 +23,19 @@ function Projects() {
           Here are some of my recent projects.
         </p>
         <Row className="justify-content-center">
+          <Col lg={4} md={6} sm={12} className="project-card-col">
+            <ProjectCard
+              imgPath={cricketRag}
+              isBlog={false}
+              title="ICC Cricket Rules RAG Assistant"
+              description={["Built and deployed a production-ready RAG application using LangChain.",
+                "Implemented advanced retrieval with MMR and contextual compression using Zilliz Cloud (Milvus) vector database.",
+                "Integrated Groq LLM (Llama 3.3 70B) with HuggingFace embeddings and deployed on Streamlit Cloud"]}
+              ghLink="https://github.com/Hamza-Zahoor157/ICC_Rule_Book-RAG"
+              demoLink="https://iccrulebook-rag.streamlit.app/"
+            />
+          </Col>
+
           <Col lg={4} md={6} sm={12} className="project-card-col">
             <ProjectCard
               imgPath={lawnCare}

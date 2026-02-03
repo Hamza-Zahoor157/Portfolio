@@ -7,6 +7,7 @@ import {
   DiMongodb, 
   DiJava,
   DiMysql,
+  DiPython,
 } from "react-icons/di";
 import { 
   SiNextdotjs, 
@@ -21,7 +22,11 @@ import {
   SiExpress,
   SiOracle,
   SiCplusplus,
-  SiFramer
+  SiFramer,
+  SiPytorch,
+  SiStreamlit,
+  SiOpenai,
+  SiTypescript,
 } from "react-icons/si";
 import "./techstack.css";
 
@@ -40,6 +45,12 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons" title="C#">
         <SiCsharp />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="Python">
+        <DiPython />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="TypeScript">
+        <SiTypescript />
       </Col>
       <Col xs={4} md={2} className="tech-icons" title="HTML5">
         <SiHtml5 />
@@ -92,9 +103,19 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons" title="Oracle">
         <SiOracle />
       </Col>
-    
+      
+      {/* AI/ML Technologies */}
+      <Col xs={4} md={2} className="tech-icons" title="PyTorch">
+        <SiPytorch />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="OpenAI">
+        <SiOpenai />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="Streamlit">
+        <SiStreamlit />
+      </Col>
 
-      {/* Note: No specific icons for SQL, EF Core, SignalR, Prisma, n8n, ShadCN UI in react-icons */}
+      {/* Note: LangChain, Milvus/Zilliz, ChromaDB, Pinecone, Groq, RAG, Vector DBs icons not available in react-icons */}
     </Row>
   );
 }

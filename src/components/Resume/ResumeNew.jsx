@@ -17,8 +17,8 @@ function ResumeNew() {
   const iframeRef = useRef(null);
   
   // Path to resume in the public folder
-  const resumePath = "/Assets/Hamza_Zahoor_CV.pdf";
-  const resumeFileName = 'Hamza_Zahoor_CV.pdf';
+  const resumePath = "/Assets/Hamza_Zahoor_Resume.pdf";
+  const resumeFileName = 'Hamza_Zahoor_Resume.pdf';
   
   // Check if PDF is accessible
   useEffect(() => {

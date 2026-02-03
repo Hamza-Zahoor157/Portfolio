@@ -9,9 +9,11 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hello! I'm <span className="purple">Hamza Zahoor</span>, a dedicated Software Engineering student at PUCIT with a strong academic record (CGPA: 3.79/4.0). Based in <span className="purple">Lahore, Pakistan</span>, I specialize in full-stack development with expertise in modern web technologies and cloud platforms.
+            Hello! I'm <span className="purple">Hamza Zahoor</span>, a final-year Software Engineering student at PUCIT (CGPA: 3.81/4.0) with practical experience building and deploying full-stack applications and AI-enabled features. Based in <span className="purple">Lahore, Pakistan</span>.
             <br /><br />
-            With hands-on experience in both frontend and backend development, I enjoy transforming complex problems into elegant, efficient solutions. My technical toolkit includes React, Node.js, .NET, and various databases, allowing me to build robust and scalable applications.
+            I have completed internships at <span className="purple">Nexium</span> (Web Developer), <span className="purple">Markonify</span> (Web Developer), and <span className="purple">Turing</span> (AI Training Engineer), gaining hands-on experience with production systems, AI workflows, and deployment pipelines.
+            <br /><br />
+            My expertise spans <span className="purple">RAG systems</span>, <span className="purple">LLM integration</span>, full-stack development with <span className="purple">Next.js, React, .NET, MERN Stack</span>, AI automation using <span className="purple">LangChain, n8n</span>, vector databases (<span className="purple">Milvus, ChromaDB, FAISS</span>), and modern databases like <span className="purple">Supabase, MongoDB, Prisma, SQL Server</span>.
             <br /><br />
             <div className="contact-info">
               <p>
@@ -38,13 +40,13 @@ function AboutCard() {
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Passionate about cricket and a die-hard Manchester United & Real Madrid football fan
+              <ImPointRight /> Cricket and being a die-hard Manchester United & Real Madrid football fan
             </li>
             <li className="about-activity">
-              <ImPointRight /> Anime enthusiast - completed the Big 3, DBZ, and always exploring new series
+              <ImPointRight /> Anime - I've completed the Big 3, DBZ, and am always exploring new series
             </li>
             <li className="about-activity">
-              <ImPointRight /> Avid movie and series buff, always up for recommendations
+              <ImPointRight /> Movies and TV series - always up for recommendations
             </li>
           </ul>
 
